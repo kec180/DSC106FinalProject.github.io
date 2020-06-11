@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DSC106 Final Project</title>
+        <meta name = "GroupMember1" content = "Keshan Chen">
+        <meta name = "PID" content = "A15075320">
+        <meta name = "GroupMenber2" content = "Zihan Qin">
+        <meta name = "PID" content = "A14833282">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="barchart.js"></script>
+        <script type="text/javascript" src="piechart.js"></script>
+        <script type="text/javascript" src="areachart.js"></script>
+        <script type="text/javascript" src="linechart.js"></script>
+        <script type="text/javascript" src="barchart2.js"></script>
+        <script type="text/javascript" src="buttons.js"></script>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+    </head>
+    
+    <body onscroll="showtopbtn(event)"></body>
+            
+        <a class="toTop" href="#top">↑</a>
+        <header>
+            <a name="top"></a>
+            <div class="container">
+                <p id="left-sign">&#9824</p>
+                <section>   
+                    <img src="Pic-Tex-hold-em.png" alt = "logo" id="logo">
+                    <br>
+                    <p class="container" id="small-title"><b>This website will introduce to you basic information abot Texas Hold'em as well as some interesting facts</b></p>
+                    <p id="maker">By: Keshan Chen & Zihan Qin</p>
+                </section>
+                <p id="right-sign">&#9824</p>
+            </div>
+        </header>
+
+        <section id="light-section">
+            <section>
+                <p></p>
+                <p class="container" id='title'>&#x2666 <b>What is Texas Hold'em?</b> &#x2666</p>
+                <p id = "basic">
+                    <b>Texas hold'em</b> (also known as <b>Texas holdem</b>, <b>hold'em</b>, and <b>holdem</b>) is one of the most 
+                    popular variants of the card game of poker. Two cards, known as hole cards, are dealt face down to each player, 
+                    and then five community cards are dealt face up in three stages. The stages consist of a series of three cards 
+                    ("the flop"), later an additional single card ("the turn" or "fourth street"), and a final card ("the river" or 
+                    "fifth street"). Each player seeks the best five card poker hand from any combination of the seven cards of the 
+                    five community cards and their two hole cards. Players have betting options to check, call, raise, or fold. 
+                    Rounds of betting take place before the flop is dealt and after each subsequent deal. The player who has the 
+                    best hand and has not folded by the end of all betting rounds wins all of the money bet for the hand, known as 
+                    the pot.<br><span id="source">Source: WikiPedia</span>
+                </p>
+            </section>
+
+            <section>
+                <header class="container" id="title"><b> &#9827 5 Biggest Poker Tournaments around the World &#9827</b></header>
+                <br>
+                <section id='tournaments'>
+                    <p></p>
+                    <p class="container" id="small-title"><b>1. World Series Of Poker (WSOP)</b></p>
+                    <img src="Photo/WSOP1-min.jpg" alt = "WSOP" id="wsop">
+                    <p id='t-description'>
+                        WSOP is one of the biggest poker tournaments and happens all over the world.  Around tens and thousands 
+                        of players compete hoping to win the tournament.The first WSOP was played in 1970 when Benny Binion 
+                        invited seven of the best-known poker players to the Horseshoe Casino for a single tournament, with 
+                        a set start and stop time, and a winner determined by a secret ballot of the seven players. 
+                        From then on the WSOP was played each year with the increasing number of contestants year by year.
+                        <br><span id="source">Source: <a href="https://www.rohithebbar.com/biggest-poker-tournaments/">rohithebbar.com</a></span>
+                    </p>
+                    <br>
+                </section>
+                <section id='tournaments'>
+                    <p></p>
+                    <p class="container" id="small-title"><b>2. World Championship of Online Poker (WCOOP)</b></p>
+                    <img src="Photo/Poker-stars-min.jpg" alt="WCOOP" id="wcoop">
+                    <p id='t-description'>
+                        This is one of the biggest poker tournaments conducted online and is played by players all over the 
+                        world. The tournament is sponsored by Poker Stars. It is played on the PokerStars site in the month 
+                        of September every year.WCOOP was started in the year 2002 and is the online equivalent to the World 
+                        Series Of Poker. The WCOOP offers a variety of Poker games with Texas Hold’em being the famous one. 
+                        There are different buy-ins for different variants and different prize pool.In the year 2018 WCOOP, 
+                        186 different events were conducted by Poker Stars. The main event of 2018 WCOOP consisted of 2,044 players 
+                        and the winner won $1,352,967.97. The prize pool of the Main event was $10,220,000.00. The buy-in for the 
+                        main event was $5,200 No-Limit Texas Hold’em Poker.
+                        <br><span id="source">Source: <a href="https://www.rohithebbar.com/biggest-poker-tournaments/">rohithebbar.com</a></span>
+                    </p>
+                    <br>
+                </section>
+                <section id='tournaments'>
+                    <p></p>
+                    <p class="container" id="small-title"><b>3. Triton Super High Roller Series (Triton Poker)</b></p>
+                    <img src="Photo/triton-min-1024x491.jpg" alt="Triton Poker" id="triton">
+                    <p id="t-description">
+                        Triton Poker conducts one of the biggest poker tournaments in different parts of the world. Just 
+                        like PokerStars, Triton Poker conducts different poker tournaments with different buy-in amounts 
+                        and pool prizes. This year Trition Million poker tournament was conducted with the prize pool of 
+                        $65,660,000. The winner received $23,100,000. Also, the buy-in amount is $25,000. It is the 6th 
+                        largest poker tournament in terms of the prize pool and number 1 Poker tournament with the highest 
+                        amount given to a winner.You can already tell that this tournament is super expensive and is mostly 
+                        played by the businessman and professional poker players. This is not for everyone.
+                        <br><span id="source">Source: <a href="https://www.rohithebbar.com/biggest-poker-tournaments/">rohithebbar.com</a></span>
+                    </p>
+                    <br>
+                </section>
+                <section id="tournaments">
+                    <p></p>
+                    <p class="container" id="small-title"><b>4. Big One for One Drop</b></p>
+                    <img src="Photo/One-drop-min.jpg" alt="One Drop" id='bood'>
+                    <p id="t-description">
+                        The Big One for One Drop is a $1,000,000 buy-in No-Limit Texas hold ’em tournament hosted at the World 
+                        Series of Poker (WSOP). It was started in the year 2012 and became the highest buy-in poker tournament 
+                        in history as well as the largest single payout offered. The buy-in amount itself is more than enough to 
+                        make it one of the biggest poker tournaments of the world.The event is known for its charitable contributions 
+                        as much as $111,111 of each player’s buy-in is donated to the One Drop Foundation, an international non-profit 
+                        organization created by Cirque du Soleil founder Guy Laliberté, which focuses on water initiatives.This is one 
+                        of those unique tournaments that are not for everyone as the buy-in to play the tournament is 1 million dollars. 
+                        But the cause of the tournament is really good and the tournament has already collected $16M for the charity 
+                        foundation One Drop in just four years. So, if you have a lots of money and want to spend something in doing good, 
+                        then this is the best poker tournament to be a part in.
+                        <br><span id="source">Source: <a href="https://www.rohithebbar.com/biggest-poker-tournaments/">rohithebbar.com</a></span>
+                    </p>
+                    <br>
+                </section>
+                <section id="tournaments">
+                    <p></p>
+                    <p class="container" id="small-title"><b>5. World Poker Tour Championships (WPT)</b></p>
+                    <img src="Photo/World_Poker_Tour-min.jpg" alt="WPT" id='wpt'>
+                    <p id="t-description">
+                        The World Poker Tour (WPT) is an internationally televised gaming and entertainment brand. The World Poker Tour 
+                        was started in the year 2002 and has operated a series of international poker tournaments and associated television 
+                        series broadcasting playdown and the final table of each tournament. It is hands down one of the biggest poker 
+                        tournaments ever.The WPT Main Tour focuses on the buy-in range of $3,500-$25,000, and winners of official 
+                        WPT Main Tour events are awarded a membership to the WPT Champions Club. The WPT Champions Cup is the trophy awarded 
+                        to all winners of WPT Main Tour events, and champions have his or her name engraved on the Cup.The winners get whopping 
+                        prize money greater than $1M. This tournament is popular all over the world and millions watch the action by sitting at 
+                        home and watching on TV.
+                        <br><span id="source">Source: <a href="https://www.rohithebbar.com/biggest-poker-tournaments/">rohithebbar.com</a></span>
+                    </p>
+                    <br>
+                </section>
+            </section>
+
+            <br>
+    
+            <section>
+                <header class="container" id="title">&#9824 <b>Top 10 Players In The World (2020)</b> &#9824<br></header>
+                <P id="bar-description"> <b>-- A graph showing the total wins of top 10 players</b></P>
+    
+                <div>
+                    <figure class="highcharts-figure">
+                        <div id="chart-container"></div>
+                    </figure>
+                </div>
+
+                
+
+                <p id="bar-description"> <b>-- Basic information of top 10 players </b>
+                    <br><span id="source">Source: <a href="https://www.rohithebbar.com/biggest-poker-tournaments/">rohithebbar.com</a></span>
+                </p>
+
+                <!-- Rank 1 -->
+                <section id='dark-section'>
+                    <p></p>
+                    <p id = "rank"><b>1. Bryn Kenney</b></p>
+                    <div class="felx_container">
+                        <div id='photo'>
+                            <img src="Photo/Bryn Kenney.jpg" alt = "Bryn Kenney" id="head">
+                            <p>Source - flickr.com<br><a href="https://en.wikipedia.org/wiki/Bryn_Kenney">Wikipedia Page</a></p>
+                        </div>
+    
+                        <div id = "description">
+                            <p id="information">
+                                Nationality: United States<br>Total Wins: $56,403,502<br>Best Live Cash: $20,563,324
+                            </p>
+
+                            <button onclick = "toggle1()" class = "textbuttons">What can he do with the money he wins?</button> 
+                            <div id="button1" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/House.jpg" alt = "house" id='picture'>
+                                <p id="buttonfont">Buy <span id="number">6</span> houses in Beverly Hills!</p>  
+                            </div> 
+
+                            <br>
+
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>August 1, 2019 London</td>
+                                        <td> £ 1,050,000 No Limit Hold'em - Triton Million for Charity (TMC)</td>
+                                        <td>$20,563,324</td>
+                                    </tr>
+                                    <tr>
+                                        <td>March 7, 2019 Jeju</td>
+                                        <td>HK$ 2,000,000 No Limit Hold'em - Triton Super High Roller Series Jeju 2019 Main (TSHR Korea)</td>
+                                        <td>$3,062,513</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MAy 8, 2019 Montenegro</td>
+                                        <td> HK$ 1,000,000 No Limit Hold'em - Triton Montenegro Main Event (TMME)</td>
+                                        <td>$2,713,859</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_1" class = "pieArea"></div>
+                                <div id="areachart_1" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+                    <br>
+                </section>
+    
+                <!-- Rank 2 -->
+                <section> 
+                    <p id = "rank"><b>2. Justin Bonomo</b></p>
+                    <div class="felx_container">
+                        <div id="photo"> 
+                            <img src="Photo/Justin Bonomo.jpg" alt = "Justin Bonomo" id="head">
+                            <p>Source - flickr.com<br><a href="https://en.wikipedia.org/wiki/Justin_Bonomo">Wikipedia Page</a></p>
+                        </div>
+    
+                        <div id='description'>
+                            <p id="information">
+                                Nationality: United States<br>Total Wins: $49,128,105<br>Best Live Cash: $10,000,000
+                            </p>
+
+                            <button onclick = "toggle2()" class = "textbuttons">What can he do with the money he wins?</button> 
+                            <div id="button2" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/LaFerrari.png" alt = "lafa" id='picture'>
+                                <p id="buttonfont">Buy <span id="number">19</span> LaFerrari!</p> 
+                            </div> 
+
+                            <br>
+    
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                
+                                <tbody>
+                                    <tr>
+                                        <td>July 15, 2018 Las Vegas</td>
+                                        <td>$1,000,000 No Limit Hold'em - The Big One for One Drop WSOP (ODWSOP)</td>
+                                        <td>$10,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 27, 2018 Las Vegas</td>
+                                        <td>$300,000 No Limit Hold'em Super High Roller Bowl (SHRB)</td>
+                                        <td>$5,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>March 20, 2018 Macau</td>
+                                        <td>HK$2,000,000 + 100,000 No Limit Hold'em Super High Roller Bowl China (SHRB China)</td>
+                                        <td>$4,823,077</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details id='details'>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_2" class = "pieArea"></div>
+                                <div id="areachart_2" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+                    
+                </section>
+    
+                <!-- Rank 3 -->
+                
+                <section id='dark-section'>
+                    <p></p>
+                    <p id = "rank"><b>3. Daniel Negreanu</b></p>
+                    <div class="felx_container">
+                        <div id="photo">
+                            <img src="Photo/Daniel Negreanu.jpg" alt = "Daniel Negreanu"  id="head">
+                            <p>Source - flickr.com<br><a href="https://en.wikipedia.org/wiki/Daniel_Negreanu">Wikipedia Page</a></p>
+                        </div>
+    
+                        <div id='description'>
+                            <p id="information">
+                                Nationality: Canada<br>Total Wins: $42,053,305<br>Best Live Cash: $8,288,001
+                            </p>
+
+                            <button onclick = "toggle3()" class = "textbuttons">What can he do with the money he wins?</button> 
+                            <div id="button3" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/Hotel.png" alt = "hotle" id='picture'>
+                                <p id="buttonfont">Stay <span id="number">2,336</span> nights in presidential suite of Burj Al Arab in Dubai!</p>
+                            </div> 
+    
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>June 29, 2014 Las Vegas</td>
+                                        <td>$1,000,000 No Limit Hold'em - The Big One for One Drop WSOP (ODWSOP)</td>
+                                        <td>$8,288,001</td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 27, 2018 Las Vegas</td>
+                                        <td>$300,000 No Limit Hold'em Super High Roller Bowl (SHRB)</td>
+                                        <td>$3,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 14, 2004 Las Vegas</td>
+                                        <td>$15,000 + 300 No Limit Hold'em Five-Diamond World Poker Classic (FDWPC)</td>
+                                        <td>$1,770,218</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_3" class = "pieArea"></div>
+                                <div id="areachart_3" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+                    <br>
+                </section>
+    
+                <!-- Rank 4 -->
+                <section>
+                    <p id = "rank"><b>4. Erik Seidel</b></p>
+                    <div class="felx_container"> 
+                        <div id="photo">
+                            <img src="Photo/Erik Seidel.jpg" alt = "Erik Seidel"  id="head">
+                            <p>Source - flickr.com<br><a href="https://en.wikipedia.org/wiki/Erik_Seidel">Wikipedia Page</a></p>
+                        </div>
+    
+                        <div id="description">
+                            <p id="information">
+                                Nationality: United States<br>Total Wins: $37,748,126<br>Best Live Cash: $2,472,555
+                            </p>
+
+                            <button onclick = "toggle4()" class = "textbuttons">What can he do with the money wins?</button> 
+                            <div id="button4" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/Rolex.png" alt = "rolex" id='picture'>
+                                <p id="buttonfont">Buy <span id="number">3,774</span> Rolex Oyster Perpetual Submariner!</p>
+                            </div> 
+    
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>January 27, 2011 Melbourne</td>
+                                        <td>$250,000 Super High Roller No Limit Hold'em Aussie Millions Poke Championship (AMPC)</td>
+                                        <td>$2,472,555</td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 29, 2016 Las Vegas</td>
+                                        <td>$300,000 No Limit Hold'em Super High Roller Bowl (SHRB)</td>
+                                        <td>$2,400,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>April 30, 2015 Monte Carlo</td>
+                                        <td>€98,000 + 2,000 No Limit Hold'em EPT (EPT)</td>
+                                        <td>$2,222,222</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_4" class = "pieArea"></div>
+                                <div id="areachart_4" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+                
+                </section>
+
+                <!-- Rank 5 -->
+                <section id='dark-section'>
+                    <p></p>
+                    <p id = "rank"><b>5. Daniel Smith</b></p>
+                    <div class="felx_container">
+                        <div  id="photo">
+                            <img src="Photo/Daniel Smith.jpg" alt = "Daniel Smith"  id="head">
+                            <p>Source - thehendonmob.com<br><a href="https://en.wikipedia.org/wiki/Dan_Smith_(poker_player)">Wikipedia Page</a></p>
+                        </div>
+    
+                        <div id="description">
+                            <p id="information">
+                                Nationality: United States<br>Total Wins: $36,742,719<br>Best Live Cash: $8,765,628
+                            </p>
+
+                            <button onclick = "toggle5()" class = "textbuttons">What can he do with the money he wins?</button> 
+                            <div id="button5" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/Macbook.png" alt = "macbook" id='picture'>
+                                <p id="buttonfont">Buy <span id="number">12,166</span> 16-inch macbook!</p>
+                            </div> 
+    
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>August 1, 2019 London</td>
+                                        <td>£1,050,000 No Limit Hold'em - Triton Million for Charity(TMC)</td>
+                                        <td>$8,765,628</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July 15, 2018 Las Vegas</td>
+                                        <td>$1,000,000 No Limit Hold'em - The Big One for One Drop (ODWSOP)</td>
+                                        <td>$4,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July 8, 2016 Las Vegas</td>
+                                        <td>$111,111 No Limit Hold'em High Roller for One Drop (single re-entry) (HROD)</td>
+                                        <td>$3,078,974</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_5" class = "pieArea"></div>
+                                <div id="areachart_5" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+                    <br>               
+                </section>
+
+                <!-- Rank 6 -->
+                <section>
+                    <p id = "rank"><b>6. Stephen Chidwick</b></p>
+                    <div class="felx_container">
+                        <div  id="photo">
+                            <img src="Photo/StephenChidwick18FRs.jpg" alt = "Stephen Chidwick"  id="head">
+                            <p>Source - thehendonmob.com<br><a href="https://en.wikipedia.org/wiki/Stephen_Chidwick">Wikipedia Page</a></p>
+                        </div>
+                        
+                        <div id="description">
+                            <p id="information">
+                                Nationality: England<br>Total Wins: $34,387,646<br>Best Live Cash: $5,368,947
+                            </p>
+
+                            <button onclick = "toggle6()" class = "textbuttons">What can he do with the money he wins?</button> 
+                            <div id="button6" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/Rich.png" alt = "rich" id='picture'>
+                                <p id="buttonfont">Spend almost <span id="number">$2,000</span> everyday for the rest of his life!</p>
+                            </div> 
+    
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>August 1, 2019 london</td>
+                                        <td>£1,050,000 No Limit Hold'em - Triton Million for Charity (TMC)</td>
+                                        <td>$5,368,947	</td>
+                                    </tr>
+                                    <tr>
+                                        <td>June 19, 2019 Las Vegas</td>
+                                        <td>$25,000 Pot Limit Omaha - High Roller 8-Handed (PLOHR)</td>
+                                        <td>$1,618,417</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 17, 2019 Las Vegas</td>
+                                        <td>$300,000 No Limit Hold'em (NLH)</td>
+                                        <td>$1,512,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_6" class = "pieArea"></div>
+                                <div id="areachart_6" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+               
+                </section>
+
+                <!-- Rank 7 -->
+                <section id='dark-section'>
+                    <p></p>
+                    <p id = "rank"><b>7. David Peters</b></p>
+                    <div class="felx_container">
+                        <div  id="photo">
+                            <img src="Photo/David Peters.jpg" alt = "David Peters"  id="head">
+                            <p>Source - flickr.com<br><a href="https://en.wikipedia.org/wiki/David_Peters_(poker_player)">Wikipedia Page</a></p>
+                        </div>
+    
+                        <div id="description">
+                            <p id="information">
+                                Nationality: United States<br>Total Wins: $33,737,539<br>Best Live Cash: $2,699,752
+                            </p>
+
+                            <button onclick = "toggle7()" class = "textbuttons">What can he do with the money he wins?</button> 
+                            <div id="button7" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/Alpaca.png" alt = "alpaca" id='picture'>
+                                <p id="buttonfont">Buy <span id="number">675</span> champion bloodline alpaca!</p>
+                            </div>  
+    
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>January 3, 2016 Philippines</td>
+                                        <td>$196,000 + 4,000 No Limit Hold'em WPTN (WPTN)</td>
+                                        <td>$2,699,752</td>
+                                    </tr>
+                                    <tr>
+                                        <td>October 26, 2018 Rozvadov</td>
+                                        <td>€95,000 + 5,000 No Limit Hold'em - Super High Roller WSOPE (WSOPE)</td>
+                                        <td>$1,848,008</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July 2, 2015 Las Vegas</td>
+                                        <td>$500,000 No Limit Hold'em Super High Roller Bowl (SHRB)</td>
+                                        <td>$1,505,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_7" class = "pieArea"></div>
+                                <div id="areachart_7" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+                    <br>
+                </section>
+
+                <!-- Rank 8 -->
+                <section>
+                    <p id = "rank"><b>8. Fedor Holz</b></p>
+                    <div class="felx_container">
+                        <div  id="photo">
+                            <img src="Photo/Fedor Holz.jpg" alt = "Fedor Holz"  id="head">
+                            <p>Source - flickr.com<br><a href="https://en.wikipedia.org/wiki/Fedor_Holz">Wikipedia Page</a></p>
+                        </div>
+                        
+                        <div id="description">
+                            <p id="information">
+                                Nationality: Germany<br>Total Wins: $32,556,377<br>Best Live Cash: $6,000,000
+                            </p>
+
+                            <button onclick = "toggle8()" class = "textbuttons">What can he do with the money he wins?</button> 
+                            <div id="button8" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/Poker Chips.png" alt = "chip" id='picture'>
+                                <p id="buttonfont">Buy <span id="number">465,091</span> poker chip sets on Amazon!</p>
+                            </div>  
+    
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>July 15, 2018 Las Vegas</td>
+                                        <td>$1,000,000 No Limit Hold'em - The Big One for One Drop WSOP (ODWSOP)</td>
+                                        <td>$6,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July 8, 2016 Las Vegas</td>
+                                        <td>$111,111 No Limit Hold'em - High Roller for One Drop WSOP (HRWSOP)</td>
+                                        <td>$4,981,775</td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 29, 2016 Las Vegas</td>
+                                        <td>$300,000 No Limit Hold'em Super High Roller Bowl (SHRB)</td>
+                                        <td>$3,500,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_8" class = "pieArea"></div>
+                                <div id="areachart_8" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+             
+                </section>
+
+                <!-- Rank 9 -->
+                <section id='dark-section'>
+                    <p></p>
+                    <p id = "rank"><b>9. Jason Koon</b></p>
+                    <div class="felx_container">
+                        <div  id="photo">
+                            <img src="Photo/Jason Koon Triton.jpg" alt = "Jason Koon"  id="head">
+                            <p>Source - thehendonmob.com<br><a href="https://en.wikipedia.org/wiki/Jason_Koon">Wikipedia Page</a></p>
+                        </div>
+                        
+                        <div id="description">
+                            <p id="information">
+                                Nationality: United States<br>Total Life Earnings: $31,101,728<br>Best Live Cash: $3,579,836
+                            </p>
+
+                            <button onclick = "toggle9()" class = "textbuttons">What can he do with the money he wins?</button> 
+                            <div id="button9" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/N95.png" alt = "n95" id='picture'>
+                                <p id="buttonfont">Buy <span id="number">6,220,345</span> N95 masks to protect his health!</p>
+                            </div>  
+    
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>May 17, 2018 Montenegro</td>
+                                        <td>HK$1,000,000 No Limit Hold'em - Short Deck Ante Only 1M (SDA 1M)</td>
+                                        <td>$3,579,836</td>
+                                    </tr>
+                                    <tr>
+                                        <td>March 15, 2019 Jeju</td>
+                                        <td>HK$1,000,000 No Limit Hold'em - Short Deck Ante Only (SDA)</td>
+                                        <td>$2,840,945</td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 27, 2018 Las Vegas</td>
+                                        <td>$300,000 No Limit Hold'em Super High Roller Bowl (SHRB)</td>
+                                        <td>$2,100,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_9" class = "pieArea"></div>
+                                <div id="areachart_9" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+                    <br>
+                </section>
+    
+                <!-- Rank 10 -->
+                <section>
+                    <p id = "rank"><b>10. Steve O'Dwyer</b></p>
+                    <div class="felx_container">
+                        <div id='photo'>
+                            <img src="Photo/Steve O'Dwyer.jpg" alt = "Steve O'Dwyer" id="head">
+                            <p>Source - flickr.com<br><a href="https://en.wikipedia.org/wiki/Steve_O%27Dwyer">Wikipedia Page</a></p>
+                        </div>
+    
+                        <div id = "description">
+                            <p id="information">
+                                Nationality: United States<br>Total Wins: $30,471,478<br>Best Live Cash: $1,872,580
+                            </p>
+
+                            <button onclick = "toggle10()" class = "textbuttons">What can he do with the money he wins?</button> 
+                            <div id="button10" class = "text_button" style="display:none;">
+                                <br>
+                                <img src = "Photo/Toilet Paper.png" alt = "paper" id='picture'>
+                                <p id="buttonfont">Buy <span id="number">25,392,898</span> toilet paper!</p>
+                            </div>  
+                            
+                            <table>
+                                <colgroup>
+                                    <col span ="1" id="col1">
+                                    <col span ="1" id="col2">
+                                    <col span ="1" id="col3">
+                                </colgroup>
+                                <caption><b>Top 3 Biggest Tournament Wins</b></caption>
+                                <thead>
+                                    <tr id = "table-head">
+                                        <th id="th-color">Date & Location</th>
+                                        <th id="th-color">Tournament Name</th>
+                                        <th id="th-color">Total Wins</th>
+                                    </tr>
+                                </thead> 
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>January 6, 2015 Paradise Island</td>
+                                        <td>$97,000 + 3,000 #1 No Limit Hold'em - Super High Roller 8 Handed (SHR8H)</td>
+                                        <td>$1,872,580</td>
+                                    </tr>
+                                    <tr>
+                                        <td>November 1, 2014 Macau</td>
+                                        <td>HK$ 500,000 Super High Roller (SHR)</td>
+                                        <td>$1,811,638</td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 6, 2013 Monte Carlo</td>
+                                        <td>€10,000 + 600 No Limit Hold'em - Main Event (NHME)</td>
+                                        <td>$1,604,972</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+    
+                    <details>
+                        <summary><b>Visualization of his Wins</b></summary>
+                        <div>
+                            <figure id="graphs">
+                                <div id="piechart_10" class = "pieArea"></div>
+                                <div id="areachart_10" class = "pieArea"></div>
+                            </figure>
+                        </div>
+                    </details>
+                </section>
+            </section>
+
+            <br>
+
+            <section  id="line">
+                <br>
+                <P id="bar-description"> <b>-- A Line Chart Showing the Changes in Rank of Each Player</b></P>
+                <br>
+                <figure class='linechart-figure'>
+                    <div id='linechart'></div>
+                </figure>
+                <br> 
+            </section>
+            <br>
+
+            <section>
+                <P id="bar-description"> <b>-- A Series of Bar Charts Showing the Top 5 Countries with the Most Counts of Top100 Poker Players from 2016 to 2020 and Comparison with Previous Year</b></P>
+                <br>
+                <div class='buttons'>
+                    <button id='2020'>
+                      2020
+                    </button>
+                    <button id='2019'>
+                      2019
+                    </button>
+                    <button id='2018'>
+                      2018
+                    </button>
+                    <button id='2017'>
+                      2017
+                    </button>
+                    <button id='2016' class='active'>
+                      2016
+                    </button>
+                  </div>
+                  <div id="country"></div>
+                  <br>
+                  <br>
+            </section>
+        </section>
+    </body>
+</html>
