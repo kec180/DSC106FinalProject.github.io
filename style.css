@@ -1,0 +1,385 @@
+#logo {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width:600px;
+    width:60%;
+}
+
+#maker {
+    text-align: right;
+}
+
+#tournaments {
+    background-color: rgb(219, 217, 245);
+    margin-left:200px;
+    margin-right: 200px;
+}
+
+#left-sign {
+    font-size:100px;
+    color:black;
+    margin-left: 100px
+}
+
+#right-sign {
+    font-size:100px;
+    color:black;
+    margin-right: 100px
+}
+
+#small-title {
+    font-size:30px;
+    text-align:center;
+    color:rgb(7, 7, 145);
+}
+
+#basic {
+    text-align: left;
+    margin-left:190px;
+    margin-right:190px;
+    font-size:20px;
+    color:rgb(61, 11, 61);
+}
+
+#t-description {
+    text-align: left;
+    margin-left:80px;
+    margin-right:80px;
+    font-size:20px;
+    color:rgb(61, 11, 61);
+}
+
+#title {
+    color:purple;
+    font-size:50px;
+    text-align:center;
+}
+
+#wsop {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+}
+
+#wcoop {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+#triton {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
+#bood {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+#wpt {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+#bar-description {
+    text-align:center;
+    font-size:30px;
+    color:rgb(161, 103, 161);
+}
+
+summary {
+    font-size:25px;
+    color: rgb(199, 81, 81);
+}
+
+#photo {
+    height:300px;
+    margin-left: 3%;
+}
+
+#head {
+    height: 95%;
+}
+
+#rank {
+    font-size:40px;
+    color: blue;
+    margin-left:25px;
+}
+
+#graphs {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.felx_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.col_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#light-section {
+    background-color:rgb(237, 237, 250);
+}
+
+#dark-section {
+    background-color:rgb(226, 226, 253);
+}
+
+p:empty {
+    height:1px;
+}
+
+#th-color {
+    background-color: rgb(169, 169, 243);
+}
+
+#details {
+    margin-bottom: 20px;
+}
+
+#description {
+    margin-top: 0px;
+    margin-left:80px;
+    text-align: left;
+    width: 100%;
+    width:850px;
+}
+
+
+#information {
+    font-size: 20px;
+}
+
+details {
+    margin-left: 3%;
+}
+
+caption {
+    font-size:25px;
+    color:rgb(7, 39, 110);
+}
+
+#table-head {
+    text-align: center;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    margin:0 auto;
+    width:1000px;
+    text-align: left;
+    width:120%
+}
+
+th {
+    font-size:20px;
+}
+
+td {
+    font-size:15px;
+}
+
+#col1 {
+    width: 18%;
+}
+
+#col2 {
+    width: 60%;
+}
+
+#col3 {
+    width: 11%;
+}
+
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 400px; 
+    max-width: 1000px;
+    margin: 1em auto;
+}
+  
+#chart-container {
+    height: 700px;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 50px auto;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+  padding: 2.0em;
+}
+
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 2.0em;
+}
+
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #ffffff;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+.pieArea {
+    margin: auto;
+    width: auto;
+    display: inline-block;;
+    grid-template-columns: 50% 50%;
+}
+
+.textbuttons {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.textbuttons {
+    background-color: #99ccff;
+    color: #00008B;
+    border: 2px solid #e7e7e7;
+}
+  
+.textbuttons:hover {background-color: #e7e7e7;}
+
+#line {
+    background-color: rgb(226, 226, 253);
+}
+
+/*
+style for buttons and bar chart
+*/
+
+.buttons button {
+    cursor: pointer;
+    border: 1px solid silver;
+    border-right-width: 0;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    transition-duration: 0.3s;
+  }
+  
+  .buttons button:first-child {
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+  }
+  
+  .buttons button:last-child {
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border-right-width: 1px;
+  }
+  
+  .buttons button:hover {
+    color: white;
+    background-color: rgb(158, 159, 163);
+    outline: none;
+  }
+  
+  .buttons button.active {
+    background-color: #0051B4;
+    color: white;
+  }
+  .buttons {
+    width: 100%;
+    text-align: center;
+}
+
+#buttonfont {
+    font-weight: bold;
+    font-size: 30px;
+    color:rgb(82, 19, 82);
+}
+
+#buttonfont {
+    font-weight: bold;
+    font-size: 30px;
+    color:rgb(82, 19, 82);
+}
+
+.text_button{
+    width: 60%;
+}
+
+.toTop{
+    position: fixed; 
+    right:100px; 
+    bottom: 50px; 
+    display: block; 
+    height: 50px; 
+    width:50px; 
+    background-color: rgba(255,255,255,0.4);
+    display: none;
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none; 
+    color: #2b2b2b; 
+    box-shadow: #2b2b2b 2px 2px 5px;
+    border-radius: 5px;;
+}
+
+.toTop.show{
+    display: flex;
+}
+
+#picture {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+}
+
+#number {
+    color:rgb(47, 0, 255);
+}
+
+#source {
+    font-size:15px;
+    color:black;
+}
